@@ -244,9 +244,17 @@ footer {
     flex-direction: column;
     padding: 10px;
 }
+/* Mobile View */
+@media screen and (min-width: 60px){
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+    
 
 /* Tablet View */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
@@ -254,7 +262,7 @@ footer {
 }
 
 /* Desktop View */
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .navbar {
         padding: 20px;
     }
