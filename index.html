@@ -240,30 +240,23 @@ footer {
   background-color: #172337;
 }
 
-/* Mobile View */
-@media screen and (min-width: 60px){
-    .navbar {
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 10px;
-    }
-}
-    
+@media screen and (max-width: 768px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-/* Tablet View */
-@media screen and (min-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+        @media screen and (max-width: 480px) {
+            .products {
+                grid-template-columns: repeat(1, 1fr);
+            }
 
-/* Desktop View */
-@media screen and (min-width: 1024px) {
-    .navbar {
-        padding: 20px;
-    }
-}
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
 
     </style>
 </head>
